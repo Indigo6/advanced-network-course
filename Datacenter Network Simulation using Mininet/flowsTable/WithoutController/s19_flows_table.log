@@ -1,0 +1,21 @@
+NXST_FLOW reply (xid=0x4):
+ cookie=0x0, duration=89.019s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.0.0.3 actions=output:1
+ cookie=0x0, duration=88.855s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.2.0.3 actions=output:3
+ cookie=0x0, duration=89.043s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.0.0.2 actions=output:1
+ cookie=0x0, duration=88.996s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.0.1.2 actions=output:1
+ cookie=0x0, duration=88.793s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.3.0.2 actions=output:4
+ cookie=0x0, duration=88.877s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.2.0.2 actions=output:3
+ cookie=0x0, duration=88.838s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.2.1.2 actions=output:3
+ cookie=0x0, duration=88.922s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.1.1.2 actions=output:2
+ cookie=0x0, duration=88.9s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.1.1.3 actions=output:2
+ cookie=0x0, duration=88.946s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.1.0.3 actions=output:2
+ cookie=0x0, duration=88.738s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.3.1.3 actions=output:4
+ cookie=0x0, duration=88.775s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.3.0.3 actions=output:4
+ cookie=0x0, duration=88.756s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.3.1.2 actions=output:4
+ cookie=0x0, duration=88.979s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.0.1.3 actions=output:1
+ cookie=0x0, duration=88.961s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.1.0.2 actions=output:2
+ cookie=0x0, duration=88.815s, table=0, n_packets=60, n_bytes=5880, ip,nw_dst=10.2.1.3 actions=output:3
+ cookie=0x0, duration=94.575s, table=0, n_packets=272, n_bytes=11424, arp,in_port=3 actions=output:1,output:2,output:4
+ cookie=0x0, duration=94.596s, table=0, n_packets=272, n_bytes=11424, arp,in_port=1 actions=output:2,output:3,output:4
+ cookie=0x0, duration=94.583s, table=0, n_packets=272, n_bytes=11424, arp,in_port=2 actions=output:1,output:3,output:4
+ cookie=0x0, duration=94.566s, table=0, n_packets=272, n_bytes=11424, arp,in_port=4 actions=output:1,output:2,output:3
