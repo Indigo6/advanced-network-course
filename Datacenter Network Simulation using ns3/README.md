@@ -69,7 +69,7 @@ n1->n5, n6->n2, n3->n7, n8->n4 分别发起一条到TCP流。每条流均从0秒
 
 1. Core 到 Aggeration 层吞吐量，以 a1-c1 p2p 通道为例
 
-   ![Pattern1-p2p-1-1](pictures\Pattern1\Pattern1-p2p-0-0.jpg)
+   ![Pattern1-p2p-1-1](.\pictures\Pattern1\Pattern1-p2p-0-0.jpg)
 
 2. Aggeration 到 ToR 层吞吐量，以 a1-t1-t2 ethernet 为例
 
