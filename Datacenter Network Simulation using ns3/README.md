@@ -6,7 +6,7 @@
 
 ### 网络拓扑结构
 
-![image-20210522162543900](C:\Users\Indigo6\AppData\Roaming\Typora\typora-user-images\image-20210522162543900.png)
+![image-20210522162543900](pictures\origin.png)
 
 + All the end-end delays on the networks are 500ns.
 
