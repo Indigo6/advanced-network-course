@@ -94,13 +94,13 @@
 
 #### 第一次 `pingall`
 
-![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/With Controller/pingall_1.jpg)
+![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/With%20Controller/pingall_1.jpg)
 
 可以看出，此时转发规则还不完善，终端之间的连接有部分还没有建立
 
 #### 第二次 `pingall`
 
-![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/With Controller/pingall_2.jpg)
+![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/With%20Controller/pingall_2.jpg)
 
 
 
@@ -241,13 +241,13 @@ for i in range(4):
 
 使用 `pingall`  进行测试
 
-![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/Without Controller/pingall.jpg)
+![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures/Without%20Controller/pingall.jpg)
 
 #### 测试流量均衡
 
 以 `h1` 与 `h9` 之间的通讯为例，路径如下
 
-![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures//With Controller/example.jpg)
+![](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20Mininet/pictures//With%20Controller/example.jpg)
 
 各交换机的 flows entry 见 `flowsTable/WithoutController` 文件夹
 
