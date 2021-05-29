@@ -6,7 +6,7 @@
 
 ### 网络拓扑结构
 
-![image-20210522162543900](pictures\origin.png)
+![image-20210522162543900](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures\origin.png)
 
 + All the end-end delays on the networks are 500ns.
 
