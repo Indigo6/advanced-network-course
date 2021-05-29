@@ -6,7 +6,7 @@
 
 ### 网络拓扑结构
 
-![image-20210522162543900](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter Network Simulation using ns3/pictures/origin.png)
+![image-20210522162543900](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/origin.png)
 
 + All the end-end delays on the networks are 500ns.
 
@@ -69,15 +69,15 @@ n1->n5, n6->n2, n3->n7, n8->n4 分别发起一条到TCP流。每条流均从0秒
 
 1. Core 到 Aggeration 层吞吐量，以 a1-c1 p2p 通道为例
 
-   ![Pattern1-p2p-1-1](.\pictures\Pattern1\Pattern1-p2p-0-0.jpg)
+   ![Pattern1-p2p-1-1](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1/Pattern1-p2p-0-0.jpg)
 
 2. Aggeration 到 ToR 层吞吐量，以 a1-t1-t2 ethernet 为例
 
-   ![Pattern1-csma2-1-2](pictures\Pattern1\Pattern1-csma2-1-1.jpg)
+   ![Pattern1-csma2-1-2](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1/Pattern1-csma2-1-1.jpg)
 
 3. ToR 与 Server 层吞吐量，以 t4-n7-n8 ethernet 通道为例
 
-   ![Pattern1-csma2-14-0](pictures\Pattern1\Pattern1-csma2-7-0.jpg)
+   ![Pattern1-csma2-14-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1/Pattern1-csma2-7-0.jpg)
 
 可见 ToR 与 Server 层 ethernet 通道的带宽完全没有利用起来，而p2p 和 Aggeration 到 ToR 层 ethernet 通道的带宽几乎发挥到极限，所以瓶颈在于Aggeration 到 ToR 层 ethernet 和 Core 到 Aggeration 层的 p2p 通道。
 
@@ -87,19 +87,19 @@ n2, n3, n4, n5, n6, n7, n8 分别发起一条到 n1 的TCP流。每条流均从0
 
 1. Core 到 Aggeration 层吞吐量，以 a1-c1 p2p 通道为例
 
-   ![Pattern1-p2p-1-1](pictures\Pattern2\Pattern2-p2p-0-0.jpg)
+   ![Pattern1-p2p-1-1](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2/Pattern2-p2p-0-0.jpg)
 
 2. Aggeration 到 ToR 层吞吐量，以 a1-t1-t2 ethernet 为例
 
-   ![Pattern-csma2-1-2](pictures\Pattern2\Pattern-csma2-1-1.jpg)
+   ![Pattern-csma2-1-2](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2/Pattern-csma2-1-1.jpg)
 
 3. t1-n1-n2 ethernet 通道吞吐量
 
-   ![Pattern1-p2p-1-1](pictures\Pattern2\Pattern2-csma2-7-0.jpg)
+   ![Pattern1-p2p-1-1](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2/Pattern2-csma2-7-0.jpg)
 
 4. t4-n7-n8 ethernet 通道吞吐量
 
-   ![Pattern1-csma2-14-0](D:\Learn me\USTC\研究生\2021 春季\2021春季 高级计算机网络\实验\实验1\实验报告\pictures\Pattern2\Pattern2-csma2-14-0.jpg)
+   ![Pattern1-csma2-14-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2/Pattern2-csma2-14-0.jpg)
 
 可见p2p和 a1-t1-t2 ethernet 通道带宽占用低，t4-n7-n8 ethernet 通道的带宽完全没有利用起来，而 t1-n1-n2 ethernet 通道的带宽几乎发挥到极限，所以瓶颈在于 t1-n1-n2 ethernet 通道。
 
@@ -145,21 +145,21 @@ n2, n3, n4, n5, n6, n7, n8 分别发起一条到 n1 的TCP流。每条流均从0
 
 #### 改进后拓扑图
 
-![new](pictures\new1.jpg)
+![new](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/new1.jpg)
 
 #### 改进后TCP性能
 
 1. Core 到 Aggeration 层吞吐量，以 a1-c1 p2p 通道为例
 
-   ![Pattern1-improve-p2p-0-0](D:\Learn me\USTC\研究生\2021 春季\2021春季 高级计算机网络\实验\实验1\实验报告\pictures\Pattern1_improve\Pattern1-improve-p2p-0-0.jpg)
+   ![Pattern1-improve-p2p-0-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1_improve/Pattern1-improve-p2p-0-0.jpg)
 
 2. Aggeration 到 ToR 层吞吐量，以 a1-t1-t2 ethernet 为例
 
-   ![Pattern1-improve-csma2-2-2](pictures\Pattern1_improve\Pattern1-improve-csma2-2-2.jpg)
+   ![Pattern1-improve-csma2-2-2](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1_improve/Pattern1-improve-csma2-2-2.jpg)
 
 3. ToR 与 Server 层吞吐量，以 t4-n7-n8 ethernet 通道为例
 
-   ![Pattern1-improve-csma2-15-0](pictures\Pattern1_improve\Pattern1-improve-csma2-15-0.jpg)
+   ![Pattern1-improve-csma2-15-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern1_improve/Pattern1-improve-csma2-15-0.jpg)
 
 可见 t4-n7-n8 ethernet 通道的吞吐量提高了一倍，而 p2p 和 Aggeration 到 ToR 层 ethernet 通道的带宽占用降低了许多，不再是瓶颈。
 
@@ -182,25 +182,25 @@ n2, n3, n4, n5, n6, n7, n8 分别发起一条到 n1 的TCP流。每条流均从0
 
 #### 改进后拓扑图
 
-![new](pictures\new2.jpg)
+![new](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/new2.jpg)
 
 #### 改进后TCP性能
 
 1. Core 到 Aggeration 层吞吐量，以 a1-c1 p2p 通道为例
 
-   ![Pattern2-improve-p2p-1-1](pictures\Pattern2_improve\Pattern2-improve-p2p-0-0.jpg)
+   ![Pattern2-improve-p2p-1-1](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2_improve/Pattern2-improve-p2p-0-0.jpg)
 
 2. Aggeration 到 ToR 层吞吐量，以 a1-t1-t2 ethernet 为例
 
-   ![Pattern2-improve-csma2-1-2](pictures\Pattern2_improve\Pattern2-improve-csma2-1-1.jpg)
+   ![Pattern2-improve-csma2-1-2](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2_improve/Pattern2-improve-csma2-1-1.jpg)
 
 3. t1-n1-n2 ethernet 通道吞吐量
 
-   ![Pattern2-improve-csma2-7-0](pictures\Pattern2_improve\Pattern2-improve-csma2-7-0.jpg)
+   ![Pattern2-improve-csma2-7-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2_improve/Pattern2-improve-csma2-7-0.jpg)
 
 4. t4-n7-n8 ethernet 通道吞吐量
 
-   ![Pattern2-improve-csma2-14-0](pictures\Pattern2_improve\Pattern2-improve-csma2-14-0.jpg)
+   ![Pattern2-improve-csma2-14-0](https://github.com/Indigo6/advanced-network-course/blob/main/Datacenter%20Network%20Simulation%20using%20ns3/pictures/Pattern2_improve/Pattern2-improve-csma2-14-0.jpg)
 
 可见 t4-n7-n8 和 a1-t1-t2 ethernet 通道的带宽仍然没有利用起来，n1 ethernet 通道的带宽仍然占用率很高，所以 t1-n1-n2 ethernet 通道可能仍为瓶颈。而 p2p 通道的占用变得很高，所以此时 p2p 通道也成为了瓶颈 。
 
